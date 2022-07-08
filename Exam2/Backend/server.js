@@ -5,6 +5,20 @@ port = process.env.PORT || 5000;
 bodyParser = require('body-parser');
 cors = require('cors')
 
+const mysql = require('mysql')
+
+var con = mysql.createConnection({
+  host: "13.215.139.119",
+  user: "rtd",
+  password: "Tiny722$",
+  database: "roadtotd"
+});
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
