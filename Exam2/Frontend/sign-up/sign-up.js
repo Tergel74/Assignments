@@ -39,11 +39,3 @@ const btnSignUp = document.getElementById('btn-sign-up')
 btnSignUp.addEventListener("click", () => {
     signUp()
 })
-
-
-
-
-// var user = {
-//     name: userName,
-//     age
-// }
